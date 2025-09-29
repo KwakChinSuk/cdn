@@ -1,0 +1,18 @@
+
+/*! TopLayer Tooltips default styles */
+.overlayed-tooltip {
+  /* Keep tooltip visible and ignore mouse to avoid flicker */
+  pointer-events: none !important;
+}
+/* Optional base look for tooltip blocks if they lack styles */
+.overlayed-tooltip[data-default] {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 6px 8px;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  max-width: 280px;
+  backdrop-filter: blur(2px);
+}
